@@ -14,100 +14,139 @@
 <body>
     <header>
         <nav>
-            <img class="Logo" src="./img/logo-mercado-liebre.png" width="150px" alt="logo">
-            <form class="boton" action="" method="get">
-                <input 
-                type="text"
-                name=""
-                id=""
-                placeholder="Buecas productos, marcas"
-                />
-                <button type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
-            </form>
+            <div class="buscador">
+                <img class="Logo" src="./img/logo-mercado-liebre.png" width="150px" alt="logo">
+                <form class="boton" action="" method="get">
+                    <input type="text" name="" id="" placeholder="Buecas productos, marcas"/>
+                    <button class="lupa" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+                </form>
 
-            <p class="compra"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
-
-            <ul class="item">
-            <li><a href="">Ofertas</a></li>
-            <li><a href="https://www.mercadolibre.com.ar">Tiendas Oficiales</a></li>
-            <li><a href="">Vender</a></li>
-            <li><a href="">Ayuda</a></li></li>
-
-            </ul>
-            <ul class="item">
-            <li><a href="./register">Creá tu cuenta</a><i class="fa-solid fa-user"></i></li>
-            <li><a href="">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
-            <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
-            </ul>
-            
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
+                <p class="compra"> <i class="fa-solid fa-hand-holding-dollar"></i> Comprá en cuotas y sin tarjeta de crédito</p>
             </div>
+            
+            <div class="categoria">
+                <ul class="item">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="https://www.mercadolibre.com.ar">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li></li>
+                </ul>
+        
+                <ul class="item">
+                    <li><a href="./register">Creá tu cuenta</a><i class="fa-solid fa-user"></i></li>
+                    <li><a href="./login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
+                    <li><a href="">Mis compras</a><i class="fa-solid fa-basket-shopping"></i></li>
+                </ul>
+            </div>
+            
+            <!div class="burger-menu">
+                <!i class="fas fa-bars"></i>
+            <!/div>
         </nav>
     </header>
     <main>
         <section>
             <h2 class="Titulo">Basado en tu última visita</h2>
             <div class="contenedor1">
-                <div class="caja1">
-                    <div class="cafetera">
+                <div class="cafetera">
+                    <div class="caja1">
                         <img src="./img/img-cafetera-moulinex.jpg" width="300px" alt="imagen de la cafetera">
                         <div class="margen">
-                            <p class="precios">$6.770</p>
-                            <p class="descuento">40% OFF</p>
+                            <div class="preciocondescuento">
+                                <p class="precios">$6.770</p>
+                                <p class="descuento">40% OFF</p>
+                            </div>
                             <p class="descripcion">Cafetera Moulinex</p>
                         </div>
                     </div>
                 </div>
                 <div class="Macbook">
                     <div class="caja1">
-                    <img src="./img/img-macbook-pro-2019.jpg" width="350px" alt="imagen de MacBook">
-                    <div class="margen">
-                    <p class="precios">$230.000</p>
-                    <p class="descuento">20% off</p>
-                    <p class="descripcion">MacBook Pro 2019</p>
+                        <img src="./img/img-macbook-pro-2019.jpg" width="300px" alt="imagen de MacBook">
+                        <div class="margen">
+                            <div class="preciocondescuento">
+                                <p class="precios">$230.000</p>
+                                <p class="descuento">20% off</p>
+                            </div>
+                            <p class="descripcion">MacBook Pro 2019</p>
+                        </div>
                     </div>
                 </div>
-                </div>
                 <div class="Samsung-galaxy">
-                    <img src="./img/img-samsung-galaxy-s10.jpg" width="300px" alt="imagen del Samsung Galaxy">
-                    <p class="precios">$70.500</p>
-                    <p class="descuento">10% off</p>
-                    <p class="descripcion">Samsung Galaxy S10</p>
+                    <div class="caja1">
+                        <img src="./img/img-samsung-galaxy-s10.jpg" width="300px" alt="imagen del Samsung Galaxy">
+                        <div class="margen">
+                            <div class="preciocondescuento">
+                                <p class="precios">$70.500</p>
+                                <p class="descuento">10% off</p>
+                            </div>
+                            <p class="descripcion">Samsung Galaxy S10</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="SmartTv">
-                    <img src="./img/img-tv-samsung-smart.jpg" width="300px" alt="imagen del SmartTv">
-                    <p class="precios">$23.200</p>
-                    <p class="descuento">5% off</p>
-                    <p class="descripcion">SmartTv Samsung 43"</p>
+                    <div class="caja1">
+                        <img src="./img/img-tv-samsung-smart.jpg" width="300px" alt="imagen del SmartTv">
+                        <div class="margen">
+                            <div class="preciocondescuento">
+                                <p class="precios">$23.200</p>
+                                <p class="descuento">5% off</p>
+                            </div>
+                            <p class="descripcion">SmartTv Samsung 43"</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         <h2 class="Titulo">Sección de Ofertas</h2>
         <div class="contenedor2">
             <div class="cafetera">
-                <img src="./img/img-cafetera-moulinex.jpg" width="300px" alt="imagen de la cafetera">
-                <p class="precios">$6.770</p>
-                <p class="descuento">40% OFF</p>
-                <p class="descripcion">Cafetera Moulinex</p>
+                <div class="caja1"> 
+                    <img src="./img/img-cafetera-moulinex.jpg" width="300px"alt="imagen de la cafetera">
+                    <div class="margen">
+                        <div class="preciocondescuento">
+                            <p class="precios">$6.770</p>
+                            <p class="descuento">40% OFF</p>
+                        </div>    
+                        <p class="descripcion">Cafetera Moulinex</p>
+                    </div>
+                </div>
             </div>
                 <div class="Macbook">
-                    <img src="./img/img-macbook-pro-2019.jpg" width="300px" alt="imagen de MacBook">
-                    <p class="precios">$230.000</p>
-                    <p class="descuento">20% off</p>
-                    <p class="descripcion">MacBook Pro 2019</p>
+                    <div class="caja1"> 
+                        <img src="./img/img-macbook-pro-2019.jpg" width="300px" alt="imagen de MacBook">
+                        <div class="margen">
+                            <div class="preciocondescuento">
+                                <p class="precios">$230.000</p>
+                                <p class="descuento">20% off</p>
+                            </div>    
+                            <p class="descripcion">MacBook Pro 2019</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="Samsung-galaxy">
-                    <img src="./img/img-samsung-galaxy-s10.jpg" width="300px" alt="imagen del Samsung Galaxy">
-                    <p class="precios">$70.500</p>
-                    <p class="descuento">10% off</p>
-                    <p class="descripcion">Samsung Galaxy S10</p>
+                    <div class="caja1"> 
+                        <img src="./img/img-samsung-galaxy-s10.jpg" width="300px" alt="imagen del Samsung Galaxy">
+                        <div class="margen">
+                            <div class="preciocondescuento">
+                                <p class="precios">$70.500</p>
+                                <p class="descuento">10% off</p>
+                            </div>    
+                            <p class="descripcion">Samsung Galaxy S10</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="SmartTv">
-                    <img src="./img/img-tv-samsung-smart.jpg" width="300px" alt="imagen del SmartTv">
-                    <p class="precios">$23.200</p>
-                    <p class="descuento">5% off</p>
-                    <p class="descripcion">SmartTv Samsung 43"</p>
+                    <div class="caja1"> 
+                        <img src="./img/img-tv-samsung-smart.jpg" width="300px" alt="imagen del SmartTv">
+                        <div class="margen">
+                            <div class="preciocondescuento">
+                                <p class="precios">$23.200</p>
+                                <p class="descuento">5% off</p>
+                            </div>
+                            <p class="descripcion">SmartTv Samsung 43"</p>
+                        </div>
+                    </div>
                 </div>
         </div>
     </main>
