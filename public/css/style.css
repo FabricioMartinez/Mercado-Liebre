@@ -24,11 +24,18 @@ nav{
 main{
     background-color: #ebebeb;
     margin-top: 30px;
+    padding: 20px;
 }
 footer{
-    text-align: center;
     background-color: white;
 }
+
+.terminos{
+    display: flex;
+    align-items: center;
+}
+
+
 input{
     width: 500px;
     height: 30px;
@@ -61,6 +68,7 @@ input{
 }
 
 .Logo{
+    width: 300px;
     margin-right: 0;
 }
 
@@ -109,57 +117,87 @@ input{
 }
 
 .SmartTv{
-    margin: auto;
-    padding: 20px 20px;
+    position: relative;
+    width: auto;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.SmartTv img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .Samsung-galaxy{
-    margin: auto;
-    padding: 20px 20px;
+    position: relative;
+    width: auto;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Samsung-galaxy img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .Macbook{
-    margin: auto;
-    padding: 20px 20px;
+    position: relative;
+    width: auto;
     text-align: center;
     border: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Macbook img{
+    width: 100%;
+    border-radius: 10px;
 }
 
 .cafetera{
-    margin: auto;
-    padding: 20px 20px;
+    position: relative;
+    width: auto;
     text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.copi{
+
+.cafetera img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.copi h2{
     text-align: left;
     padding: 10px;
 }
 
 .A{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
 .B{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 
 .C{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 15px;
 }
 
 .fa-solid{
     font-size: 15px;
-}
-.fas{
-    background-color: #1259c3;
-    padding: 8px;
-}
-.fa-bars{
-    color: white;
-    font-size: 2em;
 }
 
 .fa-credit-card{
@@ -186,11 +224,6 @@ input{
     color: black;
 }
 
-.burger-menu{
-    text-align: center;
-    padding: 20px;
-}
-
 .compra{
     text-align: center;
     padding: 10px;
@@ -204,14 +237,32 @@ input{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .caja1{
     width: 350px;
     height: auto;
     background-color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0;
+}
+
+
+.fa-truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -25px;
+    color: #39b54a;
+    cursor: pointer;
 }
 
 .margen{
@@ -224,17 +275,73 @@ input{
 
 .preciocondescuento{
     display: flex;
+    position: relative;
 }
 
 .contenedor2{
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
-/*
-@media (min-width: 361px){ celular
+.burger-menu{
+    display: none;
 }
 
+
+@media (max-width: 361px){
+    .categoria{
+        display: none;
+    }
+    .buscador{
+        justify-content: center;
+    }
+    .Logo{
+        width: 150px;
+    }
+    nav{
+        align-items: center;
+    }
+    input{
+        width: 50%;
+    }
+    .lupa{
+        position: absolute;
+    }
+    .fa-bars{
+        color: white;
+        font-size: 2em;
+    }
+    .burger-menu{
+        display: flex;
+        background-color: #1259c3;
+        width: 10px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+    }
+    .compra{
+        padding: 20px;
+    }
+
+    .terminos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .copi h2{
+        text-align: left;
+        padding: 10px;
+    }
+}
+
+
+/*
 @media (min-width: 769px){ tabled
 
 }*/
