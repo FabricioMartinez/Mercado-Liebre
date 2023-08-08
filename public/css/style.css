@@ -143,7 +143,6 @@ input{
 }
 
 .Macbook{
-    position: relative;
     width: auto;
     text-align: center;
     border: 2px;
@@ -241,7 +240,7 @@ input{
 }
 
 .caja1{
-    width: 350px;
+    width: 250px;
     height: auto;
     background-color: white;
     border-radius: 10px;
@@ -263,7 +262,13 @@ input{
     top: -25px;
     color: #39b54a;
     cursor: pointer;
+    animation: fa-truck 3s;
 }
+
+@keyframes fa-truck{
+    0%{opacity: 0%;}
+}
+
 
 .margen{
     display: flex;
@@ -275,6 +280,7 @@ input{
 
 .preciocondescuento{
     display: flex;
+    align-items: center;
     position: relative;
 }
 
