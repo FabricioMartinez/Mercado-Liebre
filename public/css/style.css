@@ -294,6 +294,101 @@ input{
     display: none;
 }
 
+.Registro{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+.User input{
+    margin-right: 40px;
+}
+.Fecha{
+    margin-top: 15px;
+    margin-right: 40px;
+}
+.Direcction{
+    display: flex;
+    align-items: flex-end;
+}
+.tipo{
+    margin-top: 20px;
+    width: 100%;
+}
+.tipo div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.tipo div input{
+    width: auto;
+}
+.division{
+    width: 100%;
+    margin-top: 20px;
+}
+.division h2{
+    margin-bottom: 10px;
+}
+.interes{
+    display: flex;
+    align-items: center;
+}
+.imagen{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.clave input{
+    margin-right: 40px;
+}
+.Botones{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.Botones button{
+    width: 500px;
+    height: 40px;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+}
+
+.Botones button a{
+    text-decoration: none;
+    color: white;
+}
+
+.sing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sing div{
+    margin-top: 20px;
+}
+.envio button{
+    width: 500px;
+    height: 40px;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+}
+.envio button a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 361px){
     .categoria{
@@ -343,6 +438,100 @@ input{
     .copi h2{
         text-align: left;
         padding: 10px;
+    }
+    .Registro{
+        display: flex;
+        flex-direction: column;
+    }
+    .User input{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .Fecha{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .Fecha h2{
+        margin-bottom: 10px;
+    }
+    .Fecha input{
+        width: 100%;
+    }
+    .Direcction input{
+        margin-top: 20px;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .tipo{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    .tipo div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .tipo div input{
+        width: auto;
+    }
+    .division{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    #Electro{
+        color: red;
+    }
+    .clave{
+        margin-bottom: 10px;
+    }
+    .clave input{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .imagen input{
+        margin-top: 20px;
+        width: 100%;
+    }
+    .Botones{
+        display: flex;
+        flex-direction: column;
+    }
+    .Botones button{
+        background-color: #1259c3;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .Botones button a{
+        color: white;
+        text-decoration: none;
+    }
+    .nombre{
+        width: 100%;
+    }
+    .nombre input{
+        width: 100%;
+    }
+    .contra{
+        width: 100%;
+    }
+    .contra input{
+        width: 100%;
+    }
+    .envio{
+        width: 100%;
+    }
+    .envio button{
+        width: 100%;
+        background-color: #1259c3;
+        border-radius: 5px;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+        margin-top: 20px;
     }
 }
 
