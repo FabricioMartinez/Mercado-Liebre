@@ -71,33 +71,10 @@ input{
     width: 300px;
     margin-right: 0;
 }
-
-.Titulo{
-    font-size: 24px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.burger-menu{
+    display: none;
 }
 
-.precios{
-    font-size: 18px;
-    width: 30%;
-}
-
-.descuento{
-    font-size: 16px;
-    width: 70%;
-    display: flex;
-    color: #39b54a;;
-}
-
-.descripcion{
-    font-size: 16px ;
-    display: flex;
-    padding-left: 20px;
-    padding-top: 10px;
-    color: #b0acac;
-    z-index: -1;
-}
 .item li{
     text-decoration: none;
     margin-left: 15px;
@@ -117,63 +94,46 @@ input{
     padding-bottom: 10px;
 }
 
-.SmartTv{
-    position: relative;
-    width: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+
+
+
+
+
+.sing{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.sing div{
+    margin-top: 20px;
+}
+.envio button{
+    width: 500px;
+    height: 40px;
+    background-color: #1259c3;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.envio button a{
+    text-decoration: none;
+    color: white;
 }
 
-.SmartTv img{
-    width: 100%;
-    border-radius: 10px;
+.envio button:hover{
+    background-color: #0022AA;
+    transform: scale(1.1);
+    transition: 400ms;
 }
 
-.Samsung-galaxy{
-    position: relative;
-    width: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.Samsung-galaxy img{
-    width: 100%;
-    border-radius: 10px;
-}
 
-.Macbook{
-    width: auto;
-    text-align: center;
-    border: 2px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
 
-.Macbook img{
-    width: 100%;
-    border-radius: 10px;
+footer{
+    background-color: white;
 }
-
-.cafetera{
-    position: relative;
-    width: auto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.cafetera img{
-    width: 100%;
-    border-radius: 10px;
-}
-
-.copi h2{
-    text-align: left;
-    padding: 10px;
-}
-
 .A{
     display: flex;
     flex-direction: column;
@@ -184,11 +144,13 @@ input{
 .A i:hover{
     color: #0022AA;
 }
-
+.terminos{
+    display: flex;
+    align-items: center;
+}
 .fa-solid{
     font-size: 15px;
 }
-
 .fa-credit-card{
     font-size: 2em;
     color: #1259c3;
@@ -204,101 +166,10 @@ input{
     color: #1259c3;
 }
 
-.texto-oscuro{
-    font-size: 18px;
-    color: #666;
-}
-
-.texto-claro{
-    color: black;
-}
-
-.compra{
-    text-align: center;
-    padding: 10px;
-}
-
-.boton{
-    padding-left: 20px;
-}
-
-.contenedor1{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.caja1{
-    width: 250px;
-    height: auto;
-    background-color: white;
-    border-radius: 10px;
-    border: 0;
-    transition: all 200ms ease;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-}
-
-.caja1:hover{
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
-    transform: translateY(-3%);
-}
-
-.fa-truck{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -25px;
-    color: #39b54a;
-    cursor: pointer;
-}
-
-.fa-truck:hover{
-    transform: rotate(-90deg);
-    transition: 500ms;
-}
-
-
-
-.margen{
-    display: flex;
-    border-top: 1px solid #39b54a;
-    flex-direction: column;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-
-.preciocondescuento{
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.contenedor2{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.burger-menu{
-    display: none;
-}
 
 
 
 
-
-
-
-
-/* Mirada de Celulra */
 
 @media (max-width: 361px){
     .categoria{

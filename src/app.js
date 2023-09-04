@@ -1,23 +1,13 @@
-const express = require("express")
-const app = express()
+const express = require ("express");
+const app = express ();
+const mainRouter = require ("./Routes/mainRoutes");
 
-const path = require("path");
+app.set("view engine", "ejs");
+app.set("views", "./src/views");
 
-//para decirle a express donde se encuentran los archivos estaticos, img  y css
-app.use(express.static('public'));
+app.use(express.static("public"));
 
-const port= process.env.PORT || 3001;
+app.use(mainRouter);
 
-app.listen(port,() => console.log("Servidor Corriendo en el puerto 3001"))
 
-app.get('/',(req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/home.html'))
-})
-
-app.get('/register',(req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/register.html'))
-})
-
-app.get('/login',(req, res) =>{
-    res.sendFile(path.join(__dirname,'./views/login.html'))
-})
+app.listen(3000, ()=>"servidor escuchando en el puerto 3000!");
